@@ -1,65 +1,291 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-     <meta charset="UTF-8">
-    <title>Dream Garage</title>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Enquiry | Dream Garage</title>
+
+    <link rel="stylesheet"
+          href="css/styles.css">
+
 </head>
+
+
 <body>
 
-<!-- Navigation Menu -->
-<h1>Dream Garage</h1>
-<hr>
-<header>
-<a href="index.html">Home</a> |
-<a href="about.html">About Us</a> |
-<a href="services.html">Services / Products</a> |
-<a href="enquiry.html">Enquiry</a> |
-<a href="contact.html">Contact Us</a>
+
+<header class="site-header">
+
+    <div class="site-header__inner">
+
+        <a class="site-logo" href="index.html">
+            Dream <span>Garage</span>
+        </a>
+
+
+        <nav class="site-nav"
+             aria-label="Main navigation">
+
+            <ul class="site-nav__list">
+
+                <li>
+                    <a class="site-nav__link"
+                       href="index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a class="site-nav__link"
+                       href="about.html">
+                        About Us
+                    </a>
+                </li>
+
+                <li>
+                    <a class="site-nav__link"
+                       href="services.html">
+                        Services / Products
+                    </a>
+                </li>
+
+                <li>
+                    <a class="site-nav__link site-nav__link--active"
+                       href="enquiry.html"
+                       aria-current="page">
+                        Enquiry
+                    </a>
+                </li>
+
+                <li>
+                    <a class="site-nav__link"
+                       href="contact.html">
+                        Contact Us
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </div>
+
 </header>
-<hr>
-<main>
 
 
-<!-- ENQUIRY -->
-<div id="enquiry">
-    <h2>Enquiry Form</h2>
-    <p>Interested in a car or want to see our accessories in person? Send us a message.</p>
-    
-    <form action="mailto:info@dreamgarage.co.za" method="post" enctype="text/plain">
-        <label>Name:</label><br>
-        <input type="text" name="name"><br><br>
-        
-        <label>Email:</label><br>
-        <input type="text" name="email"><br><br>
-        
-        <label>Phone:</label><br>
-        <input type="text" name="phone"><br><br>
-        
-        <label>Category Interested In:</label><br>
-        <select name="category">
-            <option>Track Focused</option>
-            <option>High Performance Cars</option>
-            <option>SUVs</option>
-            <option>JDM</option>
-        </select><br><br>
-        
-        <label>Message:</label><br>
-        <textarea name="message" rows="5" cols="40"></textarea><br><br>
-        
-        <input type="submit" value="Send Enquiry">
-        <input type="reset" value="Clear">
-    </form>
-</div>
 
-<hr>
+<main class="page-content">
+
+
+<section class="page-banner">
+
+    <p class="eyebrow">
+        Let's talk cars
+    </p>
+
+    <h1>
+        Make an <span>Enquiry</span>
+    </h1>
+
+    <p>
+        Tell us what you're looking for and
+        the Dream Garage team can help.
+    </p>
+
+</section>
+
+
+
+<section class="section section--narrow">
+
+
+    <div class="form-card">
+
+        <h2>
+            Enquiry Form
+        </h2>
+
+        <p class="section__intro">
+
+            Interested in a car or want to see
+            our accessories in person?
+            Send us a message.
+
+        </p>
+
+
+
+        <form class="enquiry-form"
+              action="mailto:info@dreamgarage.co.za"
+              method="post"
+              enctype="text/plain">
+
+
+            <div class="form-grid">
+
+
+                <div class="form-field">
+
+                    <label for="name">
+                        Name
+                    </label>
+
+                    <input
+                        id="name"
+                        type="text"
+                        name="name"
+                        autocomplete="name"
+                        required>
+
+                </div>
+
+
+
+                <div class="form-field">
+
+                    <label for="email">
+                        Email
+                    </label>
+
+                    <input
+                        id="email"
+                        type="email"
+                        name="email"
+                        autocomplete="email"
+                        required>
+
+                </div>
+
+
+
+                <div class="form-field">
+
+                    <label for="phone">
+                        Phone
+                    </label>
+
+                    <input
+                        id="phone"
+                        type="tel"
+                        name="phone"
+                        autocomplete="tel">
+
+                </div>
+
+
+
+                <div class="form-field">
+
+                    <label for="category">
+                        Category Interested In
+                    </label>
+
+                    <select id="category"
+                            name="category">
+
+                        <option>
+                            Track Focused
+                        </option>
+
+                        <option>
+                            High Performance Cars
+                        </option>
+
+                        <option>
+                            SUVs
+                        </option>
+
+                        <option>
+                            JDM
+                        </option>
+
+                        <option>
+                            Accessories
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+
+                <div class="form-field form-field--full">
+
+                    <label for="message">
+                        Message
+                    </label>
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="7"
+                        placeholder="Tell us which car or product you are interested in..."></textarea>
+
+                </div>
+
+
+            </div>
+
+
+
+            <div class="button-group">
+
+                <button
+                    class="button button--primary"
+                    type="submit">
+
+                    Send Enquiry
+
+                </button>
+
+
+                <button
+                    class="button button--outline"
+                    type="reset">
+
+                    Clear
+
+                </button>
+
+            </div>
+
+
+        </form>
+
+    </div>
+
+</section>
+
 
 </main>
 
 
 
+<footer class="site-footer">
 
-<footer>
-<p><center>&copy; 2026 Dream Garage. All Rights Reserved.</center></p>
+    <div class="site-footer__inner">
+
+        <p>
+            &copy; 2026 Dream Garage.
+            All Rights Reserved.
+        </p>
+
+        <p>
+            Performance &bull;
+            JDM &bull;
+            SUVs &bull;
+            Accessories
+        </p>
+
+    </div>
+
 </footer>
+
+
 </body>
 </html>

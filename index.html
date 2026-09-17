@@ -1,38 +1,238 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-     <meta charset="UTF-8">
-    <title>Dream Garage</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+          content="Dream Garage - performance cars, JDM legends, SUVs and automotive accessories.">
+    <title>Home | Dream Garage</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
 </head>
+
+
 <body>
 
-<!-- Navigation Menu -->
-<h1>Dream Garage</h1>
-<hr>
-<header>
-<a href="index.html">Home</a> |
-<a href="about.html">About Us</a> |
-<a href="services.html">Services / Products</a> |
-<a href="enquiry.html">Enquiry</a> |
-<a href="contact.html">Contact Us</a>
+
+<header class="site-header">
+    <div class="site-header__inner">
+        <a class="site-logo" href="index.html">
+            Dream <span>Garage</span>
+        </a>
+
+        <nav class="site-nav" aria-label="Main navigation">
+            <ul class="site-nav__list">
+                <li>
+                    <a class="site-nav__link site-nav__link--active"
+                       href="index.html"
+                       aria-current="page">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a class="site-nav__link"
+                       href="about.html">
+                        About Us
+                    </a>
+                </li>
+
+                <li>
+                    <a class="site-nav__link"
+                       href="services.html">
+                        Services / Products
+                    </a>
+                </li>
+
+                <li>
+                    <a class="site-nav__link"
+                       href="enquiry.html">
+                        Enquiry
+                    </a>
+                </li>
+
+                <li>
+                    <a class="site-nav__link"
+                       href="contact.html">
+                        Contact Us
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
 </header>
-<hr>
-<main>
-<!-- HOMEPAGE -->
-<div id="home">
-    <h2>Welcome to Dream Garage</h2>
-    <p>From track weapons to family SUVs, JDM icons to pure performance.</p>
-    <p>We have the car and parts for every kind of driver.</p>
-    <img src="images/" alt="Showroom" width="400">
-    <p><b>Specializing in:</b> Track Cars, Performance, SUVs, JDM, Accessories</p>
-</div>
+
+
+<main class="page-content">
+
+    <!-- HERO SECTION -->
+    <section class="hero"
+             aria-labelledby="home-title">
+
+        <div class="hero__content">
+            <p class="eyebrow">
+                Performance. Passion. Precision.
+            </p>
+
+            <h1 id="home-title">
+                Welcome to
+                <span>Dream Garage</span>
+            </h1>
+
+            <p class="hero__text">
+
+                From track weapons to family SUVs,
+                JDM icons to pure performance,
+                we have the car and parts for
+                every kind of driver.
+
+            </p>
+
+            <div class="button-group">
+
+                <a class="button button--primary"
+                   href="services.html">
+                    Explore Our Cars
+                </a>
+
+                <a class="button button--outline"
+                   href="enquiry.html">
+                    Make an Enquiry
+                </a>
+            </div>
+        </div>
+
+
+        <div class="hero__image-wrap">
+            <img class="hero__image"
+                 src="images/porsche 911.jpg"
+                 srcset="
+                    images/porsche 911.jpg 736w
+                 "
+                 sizes="(max-width: 47.99rem) 92vw, 48vw"
+                 alt="Porsche 911 GT3 RS in the Dream Garage showroom">
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- SPECIALITIES -->
+    <section class="section section--center"
+             aria-labelledby="specialising-title">
+
+        <p class="eyebrow">
+            What we offer
+        </p>
+
+        <h2 id="specialising-title">
+            Built for every kind of driver
+        </h2>
+
+
+        <p class="section__intro">
+            Dream Garage specialises in carefully
+            selected vehicles and performance-focused
+            automotive products.
+
+        </p>
+
+        <div class="feature-grid">
+            <article class="feature-card">
+                <span class="feature-card__number">
+                    01
+                </span>
+
+                <h3>
+                    Track Cars
+                </h3>
+
+                <p>
+                    Race-prepped machines,
+                    track-day builds and
+                    performance upgrades.
+                </p>
+
+            </article>
+
+            <article class="feature-card">
+                <span class="feature-card__number">
+                    02
+                </span>
+
+                <h3>
+                    Performance
+                </h3>
+
+                <p>
+                    Supercars engineered for speed,
+                    handling and an unforgettable drive.
+                </p>
+
+            </article>
+
+            <article class="feature-card">
+                <span class="feature-card__number">
+                    03
+                </span>
+
+                <h3>
+                    SUVs
+                </h3>
+
+                <p>
+                    Luxury and performance SUVs
+                    that combine practicality with presence.
+                </p>
+
+            </article>
+
+            <article class="feature-card">
+                <span class="feature-card__number">
+                    04
+                </span>
+
+                <h3>
+                    JDM & Accessories
+                </h3>
+
+                <p>
+                    Japanese icons, wheels, spoilers
+                    and other performance products.
+                </p>
+
+            </article>
+        </div>
+    </section>
+
 </main>
 
 
 
+<footer class="site-footer">
+    <div class="site-footer__inner">
+        <p>
+            &copy; 2026 Dream Garage.
+            All Rights Reserved.
+        </p>
+        <p>
+            Performance &bull;
+            JDM &bull;
+            SUVs &bull;
+            Accessories
+        </p>
 
-<footer>
-<p><center>&copy; 2026 Dream Garage. All Rights Reserved.</center></p>
+    </div>
+
 </footer>
+
+
 </body>
 </html>
