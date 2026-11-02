@@ -229,6 +229,143 @@
 
 </section>
 
+<!-- GENERAL CONTACT FORM -->
+
+<section class="section section--narrow">
+
+    <div class="form-card">
+
+        <h2>Send Us a Message</h2>
+
+        <p class="section__intro">
+            Have a question or need assistance?
+            Complete the form below and our team
+            will get back to you.
+        </p>
+
+        <form
+            id="contactForm"
+            action="https://formsubmit.co/ajax/info@dreamgarage.co.za"
+            method="POST"
+        >
+
+            <input
+                type="hidden"
+                name="_subject"
+                value="New Dream Garage Contact Message"
+            >
+
+            <div class="form-grid">
+                <div class="form-field">
+                    <label for="contactName">Full Name</label>
+
+                    <input
+                        type="text"
+                        id="contactName"
+                        name="name"
+                        minlength="2"
+                        maxlength="60"
+                        autocomplete="name"
+                        required
+                    >
+
+                </div>
+                <div class="form-field">
+                    <label for="contactEmail">Email Address</label>
+
+                    <input
+                        type="email"
+                        id="contactEmail"
+                        name="email"
+                        autocomplete="email"
+                        required
+                    >
+
+                </div>
+
+                <div class="form-field">
+
+                    <label for="contactPhone">Phone Number</label>
+
+                    <input
+                        type="tel"
+                        id="contactPhone"
+                        name="phone"
+                        pattern="[+]?[0-9 ]{9,15}"
+                        placeholder="+27 64 854 0466"
+                        required
+                    >
+
+                </div>
+
+                <div class="form-field">
+
+                    <label for="messageType">Message Type</label>
+
+                    <select
+                        id="messageType"
+                        name="message_type"
+                        required
+                    >
+                        <option value="">Select message type</option>
+                        <option>General Question</option>
+                        <option>Customer Support</option>
+                        <option>Feedback</option>
+                        <option>Complaint</option>
+                        <option>Other</option>
+                    </select>
+
+                </div>
+
+                <div class="form-field form-field--full">
+
+                    <label for="contactMessage">Your Message</label>
+
+                    <textarea
+                        id="contactMessage"
+                        name="message"
+                        rows="7"
+                        minlength="10"
+                        maxlength="1000"
+                        placeholder="Write your message here..."
+                        required
+                    ></textarea>
+
+                </div>
+
+            </div>
+
+            <div class="button-group">
+
+                <button
+                    class="button button--primary"
+                    type="submit"
+                >
+                    Send Message
+                </button>
+
+                <button
+                    class="button button--outline"
+                    type="reset"
+                >
+                    Clear Form
+                </button>
+
+            </div>
+
+            <div
+                id="contactResponse"
+                class="form-response"
+                role="status"
+                aria-live="polite"
+                hidden
+            ></div>
+
+        </form>
+
+    </div>
+
+</section>
 
 
 <section class="cta-section">
@@ -280,6 +417,6 @@
 
 </footer>
 
-
+<script src="js/script.js" defer></script>
 </body>
 </html>

@@ -120,11 +120,13 @@
 
 
 
-        <form class="enquiry-form"
-              action="mailto:info@dreamgarage.co.za"
-              method="post"
-              enctype="text/plain">
+        <form
+         class="enquiry-form"
+         id="enquiryForm"
+         action="https://formsubmit.co/ajax/info@dreamgarage.co.za"
+         method="POST">
 
+            <input type="hidden" name="_subject" value="New Dream Garage Enquiry">
 
             <div class="form-grid">
 
@@ -212,6 +214,55 @@
 
                 </div>
 
+                <div class="form-field">
+
+                     <label for="product">Vehicle or Product</label>
+
+                         <select id="product" name="product" required>
+                             <option value="">Select an option</option>
+                             <option>Porsche 911 GT3 RS</option>
+                             <option>Mercedes-AMG GT Black Series</option>
+                             <option>Lamborghini Huracán STO</option>
+                             <option>BMW M4 CSL</option>
+                             <option>McLaren 765LT</option>
+                             <option>Ferrari 488 Pista</option>
+                             <option>Luxury SUVs</option>
+                             <option>JDM Vehicles</option>
+                             <option>Automotive Accessories</option>
+                             <option>Other</option>
+                        </select>
+
+                </div>
+
+                <div class="form-field">
+
+                     <label for="budget">Estimated Budget</label>
+
+                         <select id="budget" name="budget" required>
+                            <option value="">Select your budget</option>
+                            <option>Under R1 million</option>
+                            <option>R1 million - R3 million</option>
+                            <option>R3 million - R5 million</option>
+                            <option>R5 million - R10 million</option>
+                            <option>Above R10 million</option>
+                            <option>Not yet decided</option>
+                        </select>
+
+                </div>
+
+                <div class="form-field">
+
+                    <label for="date">Preferred Contact Date</label>
+
+                    <input
+                        type="date"
+                        id="date"
+                        name="preferred_date"
+                        min="2026-11-02"
+                        required
+                    >
+
+                </div>
 
 
                 <div class="form-field form-field--full">
@@ -220,18 +271,18 @@
                         Message
                     </label>
 
-                    <textarea
-                        id="message"
-                        name="message"
-                        rows="7"
-                        placeholder="Tell us which car or product you are interested in..."></textarea>
-
+                   <textarea
+                    id="message"
+                    name="message"
+                    rows="7"
+                    minlength="10"
+                    maxlength="500"
+                    placeholder="Tell us which car or product you are interested in..."
+                    required
+                ></textarea>
                 </div>
 
-
             </div>
-
-
 
             <div class="button-group">
 
@@ -254,7 +305,13 @@
 
             </div>
 
-
+            <div
+                id="enquiryResponse"
+                class="form-response"
+                role="status"
+                aria-live="polite"
+                hidden
+            ></div>
         </form>
 
     </div>
@@ -286,6 +343,6 @@
 
 </footer>
 
-
+<script src="js/script.js" defer></script>
 </body>
 </html>
