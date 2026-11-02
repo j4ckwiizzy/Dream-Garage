@@ -62,7 +62,10 @@ a {
 }
 
 /* Form controls */
-button,
+button:hover {
+    transform: translateY(-3px);
+    transition: all 0.3s ease;
+}
 input,
 select,
 textarea {
@@ -994,7 +997,7 @@ p {
     text-align: left;
     cursor: pointer;
     font-weight: 700;
-    transition: color 0.2s ease;
+    transition: color 0.4s ease;
 }
 
 .accordion-button:hover {
@@ -1087,7 +1090,7 @@ p {
 
 /* BUTTON LOADING STATE */
 
-button:disabled {
+button:hover {
     opacity: 0.6;
     cursor: not-allowed;
 }
