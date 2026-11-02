@@ -1,4 +1,5 @@
 //Added the missing webpages that were required in part 1
+//Added part 3 which is the the javaScript functionality
 
 ## Change Log Section
 Added proposal 
