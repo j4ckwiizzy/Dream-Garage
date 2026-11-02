@@ -100,6 +100,37 @@
 
 </section>
 
+<!-- PRODUCT SEARCH AND SORTING -->
+
+<section class="section product-controls">
+
+    <div class="form-field">
+        <label for="productSearch">Search our collection</label>
+
+        <input
+            type="search"
+            id="productSearch"
+            placeholder="Search for a car, SUV or accessory..."
+        >
+    </div>
+
+    <div class="form-field">
+        <label for="sortProducts">Sort products</label>
+
+        <select id="sortProducts">
+            <option value="default">Default order</option>
+            <option value="name-asc">Name: A-Z</option>
+            <option value="price-low">Price: Low to High</option>
+            <option value="price-high">Price: High to Low</option>
+        </select>
+    </div>
+
+    <p id="productCount" aria-live="polite">
+        Showing all products
+    </p>
+
+</section>
+
 
 
 <!-- TRACK CARS -->
@@ -1548,3 +1579,36 @@
     </div>
 
 </footer>
+
+<!-- IMAGE LIGHTBOX -->
+
+<div
+    id="imageLightbox"
+    class="lightbox"
+    role="dialog"
+    aria-modal="true"
+    aria-label="Enlarged vehicle image"
+    aria-hidden="true"
+>
+
+    <button
+        type="button"
+        id="closeLightbox"
+        class="lightbox__close"
+        aria-label="Close image"
+    >
+        &times;
+    </button>
+
+    <figure>
+        <img id="lightboxImage" src="" alt="">
+
+        <figcaption id="lightboxCaption"></figcaption>
+    </figure>
+
+</div>
+
+<script src="js/script.js" defer></script>
+</body>
+
+
