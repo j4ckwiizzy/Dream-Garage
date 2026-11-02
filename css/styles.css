@@ -64,7 +64,7 @@ a {
 /* Form controls */
 button:hover {
     transform: translateY(-3px);
-    transition: all 0.3s ease;
+    transition: all 0.18s ease;
 }
 input,
 select,
@@ -1092,7 +1092,7 @@ p {
 
 button:hover {
     opacity: 0.6;
-    cursor: not-allowed;
+    cursor: pointer;
 }
 
 /* SCROLL ANIMATIONS */
@@ -1139,7 +1139,7 @@ button:hover {
     *,
     *::before,
     *::after {
-        scroll-behavior: auto !important;
+        scroll-behavior: smooth !important;
         animation-duration: 0.01ms !important;
         transition-duration: 0.01ms !important;
     }
@@ -1149,4 +1149,17 @@ button:hover {
         transform: none;
     }
 
+}
+
+.map-container {
+    margin-top: 2rem;
+    overflow: hidden;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+}
+
+.map-container iframe {
+    display: block;
+    width: 100%;
+    min-height: 350px;
 }
