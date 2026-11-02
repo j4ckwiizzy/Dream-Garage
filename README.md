@@ -13,3 +13,4 @@ Added a general contact form to contact page
 Part 3 additional CSS
 Linked all five webpages to js
 Added a google maps location
+Included the sitemap and robot file
